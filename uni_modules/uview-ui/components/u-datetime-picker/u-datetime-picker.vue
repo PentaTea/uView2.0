@@ -115,7 +115,7 @@
 					value: this.innerValue,
 					mode: this.mode
 				})
-				this.$emit('input', this.innerValue)
+				this.$emit('update:modelValue', this.innerValue)
 			},
 			// 列发生变化时触发
 			change(e) {

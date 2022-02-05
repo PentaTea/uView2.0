@@ -93,7 +93,7 @@ export default {
                 delete barStyle.transition
             }
             // 修改value值
-            this.$emit('input', percent)
+            this.$emit('update:modelValue', percent)
             // 事件的名称
             if (event) {
                 this.emitEvent(event, percent)

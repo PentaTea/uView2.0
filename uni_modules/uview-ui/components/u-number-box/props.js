@@ -1,4 +1,5 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 步进器标识符，在change回调返回
         name: {
@@ -6,7 +7,7 @@ export default {
             default: uni.$u.props.numberBox.name
         },
         // 用于双向绑定的值，初始化时设置设为默认min值(最小值)
-        value: {
+        modelValue: {
             type: [String, Number],
             default: uni.$u.props.numberBox.value
         },

@@ -1,7 +1,8 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 当前匹配项的name
-        value: {
+        modelValue: {
             type: [String, Number, null],
             default: uni.$u.props.tabbar.value
         },

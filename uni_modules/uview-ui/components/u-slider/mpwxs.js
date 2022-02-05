@@ -32,7 +32,7 @@ export default {
         },
         // 此方法由wxs调用，用于修改v-model绑定的值
         updateValue(value) {
-            this.$emit('input', value)
+            this.$emit('update:modelValue', value)
         },
         // 此方法由wxs调用，发出事件
         emitEvent(e) {

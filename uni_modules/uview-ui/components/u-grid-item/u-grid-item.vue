@@ -154,7 +154,7 @@
 				}
 			}
 		},
-		beforeDestroy() {
+		beforeUnmount() {
 			// 移除事件监听，释放性能
 			uni.$off('$uGridItem')
 		}

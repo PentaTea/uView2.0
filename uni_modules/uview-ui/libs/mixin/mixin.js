@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     // 定义每个组件都可能需要用到的外部样式以及类名
     props: {
         // 每个组件都有的父组件传递的样式，可以为字符串或者对象形式
@@ -32,7 +32,7 @@ module.exports = {
         // 组件当中，只有created声明周期，为了能在组件使用，故也在created中将方法挂载到$u
         this.$u.getRect = this.$uGetRect
 	},
-    computed: {
+	computed: {
         // 在2.x版本中，将会把$u挂载到uni对象下，导致在模板中无法使用uni.$u.xxx形式
         // 所以这里通过computed计算属性将其附加到this.$u上，就可以在模板或者js中使用uni.$u.xxx
 		// 只在nvue环境通过此方式引入完整的$u，其他平台会出现性能问题，非nvue则按需引入（主要原因是props过大）
@@ -139,7 +139,7 @@ module.exports = {
     onReachBottom() {
         uni.$emit('uOnReachBottom')
     },
-    beforeDestroy() {
+    beforeUnmount() {
         // 判断当前页面是否存在parent和chldren，一般在checkbox和checkbox-group父子联动的场景会有此情况
         // 组件销毁时，移除子组件在父组件children数组中的实例，释放资源，避免数据混乱
         if (this.parent && uni.$u.test.array(this.parent.children)) {

@@ -32,7 +32,7 @@
 					value
 				} = e.detail
 				// 更新v-model的值
-				this.$emit('input', value)
+				this.$emit('update:modelValue', value)
 				// 触发事件
 				this.$emit('changing', value)
 			},
@@ -42,7 +42,7 @@
 					value
 				} = e.detail
 				// 更新v-model的值
-				this.$emit('input', value)
+				this.$emit('update:modelValue', value)
 				// 触发事件
 				this.$emit('change', value)
 			}

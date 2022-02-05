@@ -1,7 +1,8 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 当前选中项的value值
-        value: {
+        modelValue: {
             type: [Number, String, Array],
             default: ''
         },

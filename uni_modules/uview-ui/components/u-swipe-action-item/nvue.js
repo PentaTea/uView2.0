@@ -166,7 +166,7 @@ export default {
 		getContentRef() {
 			return this.$refs['u-swipe-action-item__content'].ref
 		},
-		beforeDestroy() {
+		beforeUnmount() {
 			this.unbindBindingX()
 		}
 	}

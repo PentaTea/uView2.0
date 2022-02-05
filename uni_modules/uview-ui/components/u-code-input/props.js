@@ -1,4 +1,5 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 最大输入长度
         maxlength: {
@@ -26,7 +27,7 @@ export default {
             default: uni.$u.props.codeInput.space
         },
         // 预置值
-        value: {
+        modelValue: {
             type: [String, Number],
             default: uni.$u.props.codeInput.value
         },

@@ -76,7 +76,7 @@ export default {
     if (this.content && !this.nodes.length)
       this.setContent(this.content)
   },
-  beforeDestroy() {
+  beforeUnmount() {
     this._hook('onDetached')
     clearInterval(this._timer)
   },

@@ -1,4 +1,5 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 是否为加载中状态
         loading: {
@@ -26,7 +27,7 @@ export default {
             default: uni.$u.props.switch.inactiveColor
         },
         // 通过v-model双向绑定的值
-        value: {
+        modelValue: {
             type: [Boolean, String, Number],
             default: uni.$u.props.switch.value
         },

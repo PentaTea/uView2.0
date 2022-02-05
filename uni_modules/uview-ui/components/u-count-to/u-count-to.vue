@@ -165,7 +165,7 @@ export default {
 			}
 			return x1 + x2;
 		},
-		destroyed() {
+		unmounted() {
 			this.cancelAnimationFrame(this.rAF);
 		}
 	}

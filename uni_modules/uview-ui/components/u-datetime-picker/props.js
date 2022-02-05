@@ -1,4 +1,5 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 是否打开组件
         show: {
@@ -11,7 +12,7 @@ export default {
             default: uni.$u.props.datetimePicker.showToolbar
         },
         // 绑定值
-        value: {
+        modelValue: {
             type: [String, Number],
             default: uni.$u.props.datetimePicker.value
         },

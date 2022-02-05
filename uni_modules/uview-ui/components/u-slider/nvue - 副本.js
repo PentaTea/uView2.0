@@ -146,7 +146,7 @@ export default {
 					const value = (this.x / width) * 100
 					const percent = this.formatStep(value)
 					// 修改value值
-					this.$emit('input', percent)
+					this.$emit('update:modelValue', percent)
 					// 标记下一次触发value的watch时，这个值的变化，是由内部改变的
 					this.changeFromInside = true
 					this.moving = false

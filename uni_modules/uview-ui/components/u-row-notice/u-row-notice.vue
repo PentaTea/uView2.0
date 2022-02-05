@@ -247,7 +247,7 @@
 			}
 		},
 		// #ifdef APP-NVUE
-		beforeDestroy() {
+		beforeUnmount() {
 			this.stopAnimation = true
 		},
 		// #endif

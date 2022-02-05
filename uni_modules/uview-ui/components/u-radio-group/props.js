@@ -1,7 +1,8 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 绑定的值
-        value: {
+        modelValue: {
             type: [String, Number, Boolean],
             default: uni.$u.props.radioGroup.value
         },

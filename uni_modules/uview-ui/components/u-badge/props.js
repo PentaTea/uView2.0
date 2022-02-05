@@ -1,4 +1,5 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 是否显示圆点
         isDot: {
@@ -6,7 +7,7 @@ export default {
             default: uni.$u.props.badge.isDot
         },
         // 显示的内容
-        value: {
+        modelValue: {
             type: [Number, String],
             default: uni.$u.props.badge.value
         },

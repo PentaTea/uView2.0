@@ -150,7 +150,7 @@ export default {
     }
     // #endif
   },
-  beforeDestroy() {
+  beforeUnmount() {
     // #ifdef H5 || APP-PLUS
     if (this.observer)
       this.observer.disconnect()

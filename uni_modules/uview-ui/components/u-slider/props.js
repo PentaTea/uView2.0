@@ -1,4 +1,5 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 最小可选值
         min: {
@@ -16,7 +17,7 @@ export default {
             default: uni.$u.props.slider.step
         },
         // 当前取值
-        value: {
+        modelValue: {
             type: [Number, String],
             default: uni.$u.props.slider.value
         },

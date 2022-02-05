@@ -278,7 +278,7 @@
 				// 如果开启了异步变更值，则不修改内部的值，需要用户手动在外部通过v-model变更
 				if (!this.asyncChange) {
 					this.$nextTick(() => {
-						this.$emit('input', value)
+						this.$emit('update:modelValue', value)
 						this.currentValue = value
 						this.$forceUpdate()
 					})

@@ -1,4 +1,5 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 标题
         title: {
@@ -6,7 +7,7 @@ export default {
             default: uni.$u.props.collapseItem.title
         },
         // 标题右侧内容
-        value: {
+        modelValue: {
             type: String,
             default: uni.$u.props.collapseItem.value
         },

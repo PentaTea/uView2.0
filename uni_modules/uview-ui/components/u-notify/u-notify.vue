@@ -160,7 +160,7 @@
 				this.timer = null
 			}
 		},
-		beforeDestroy() {
+		beforeUnmount() {
 			this.clearTimer()
 		}
 	}

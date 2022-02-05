@@ -81,7 +81,7 @@
 				// 发出事件
 				this.$emit('change', values)
 				// 修改通过v-model绑定的值
-				this.$emit('input', values)
+				this.$emit('update:modelValue', values)
 			},
 		}
 	}

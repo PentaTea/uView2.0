@@ -39,7 +39,7 @@
 		@blur="$emit('blur')"
 		@keyboardheightchange="$emit('keyboardheightchange')"
 		@change="e => $emit('change', e)"
-		@input="e => $emit('input', e)"
+		@input="e => $emit('update:modelValue', e)"
 		@confirm="e => $emit('confirm', e)"
 		@clear="$emit('clear')"
 		@click="$emit('click')"

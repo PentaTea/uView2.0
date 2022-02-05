@@ -1,7 +1,8 @@
 export default {
-	props: {
+    computed: { value() { return this.modelValue } },
+    props: {
 		// 输入的值
-		value: {
+		modelValue: {
 			type: [String, Number],
 			default: uni.$u.props.input.value
 		},

@@ -1,4 +1,5 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 标题
         title: {
@@ -11,7 +12,7 @@ export default {
             default: uni.$u.props.cell.label
         },
         // 右侧的内容
-        value: {
+        modelValue: {
             type: [String, Number],
             default: uni.$u.props.cell.value
         },

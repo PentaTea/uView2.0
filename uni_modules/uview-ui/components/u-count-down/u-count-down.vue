@@ -138,7 +138,7 @@
 				this.timer = null
 			}
 		},
-		beforeDestroy() {
+		beforeUnmount() {
 			this.clearTimeout()
 		}
 	}

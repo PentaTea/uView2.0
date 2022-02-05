@@ -1,7 +1,7 @@
 export default {
 	props: {
 		// 输入框的内容
-		value: {
+		modelValue: {
 			type: [String, Number],
 			default: uni.$u.props.textarea.value
 		},

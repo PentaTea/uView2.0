@@ -1,4 +1,5 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 标识符
         name: {
@@ -6,7 +7,7 @@ export default {
             default: uni.$u.props.checkboxGroup.name
         },
         // 绑定的值
-        value: {
+        modelValue: {
             type: Array,
             default: uni.$u.props.checkboxGroup.value
         },

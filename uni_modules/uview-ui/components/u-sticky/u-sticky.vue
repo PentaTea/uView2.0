@@ -196,7 +196,7 @@
 				// #endif
 			}
 		},
-		beforeDestroy() {
+		beforeUnmount() {
 			this.disconnectObserver('contentObserver')
 		}
 	}

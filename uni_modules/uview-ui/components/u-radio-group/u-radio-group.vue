@@ -83,7 +83,7 @@
 					name
 				} = childInstance
 				// 通过emit事件，设置父组件通过v-model双向绑定的值
-				this.$emit('input', name)
+				this.$emit('update:modelValue', name)
 				// 发出事件
 				this.$emit('change', name)
 			},

@@ -1,7 +1,8 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 用于v-model双向绑定选中的星星数量
-        value: {
+        modelValue: {
             type: [String, Number],
             default: uni.$u.props.rate.value
         },

@@ -1,4 +1,5 @@
 export default {
+    computed: { value() { return this.modelValue } },
     props: {
         // 搜索框形状，round-圆形，square-方形
         shape: {
@@ -91,7 +92,7 @@ export default {
             default: uni.$u.props.search.animation
         },
         // 输入框的初始化内容
-        value: {
+        modelValue: {
             type: String,
             default: uni.$u.props.search.value
         },
