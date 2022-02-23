@@ -17,9 +17,9 @@
 	 * @event {Function}	change 		当前激活面板展开时触发(如果是手风琴模式，参数activeNames类型为String，否则为Array)
 	 * @example <u-collapse></u-collapse>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-collapse",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		watch: {
 			needInit() {
 				this.init()

@@ -37,9 +37,9 @@
 	 */
 	import uvImage from '../u-image/u-image.vue';
 	import props from '../u-image/props.js';
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u--image',
-		mixins: [uni.$u.mpMixin, props, uni.$u.mixin],
+		mixins: [$u.mpMixin, props, $u.mixin],
 		components: {
 			uvImage
 		},

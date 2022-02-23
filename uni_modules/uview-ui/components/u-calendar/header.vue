@@ -21,9 +21,9 @@
 </template>
 
 <script>
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-calendar-header',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin],
+		mixins: [$u.mpMixin, $u.mixin],
 		props: {
 			// 标题
 			title: {

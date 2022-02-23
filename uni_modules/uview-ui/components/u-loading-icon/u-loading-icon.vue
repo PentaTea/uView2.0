@@ -80,9 +80,9 @@
 	 * @property {Object}			customStyle		定义需要用到的外部样式
 	 * @example <u-loading mode="circle"></u-loading>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-loading-icon',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				// Array.form可以通过一个伪数组对象创建指定长度的数组

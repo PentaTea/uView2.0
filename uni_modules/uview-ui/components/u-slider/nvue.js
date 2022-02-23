@@ -9,7 +9,7 @@ const dom = uni.requireNativePlugin('dom')
 // nvue中用于操作元素动画的库，类似于uni.animation，只不过uni.animation不能用于nvue
 const animation = uni.requireNativePlugin('animation')
 
-export default {
+import { $u } from '../../index';export default {
     data() {
         return {
             // 位移的偏移量

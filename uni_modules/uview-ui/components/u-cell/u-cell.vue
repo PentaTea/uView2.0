@@ -67,14 +67,14 @@
 	 * @event {Function}			click			点击cell列表时触发
 	 * @example 该组件需要搭配cell-group组件使用，见官方文档示例
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-cell',
 		data() {
 			return {
 
 			}
 		},
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		computed: {
 			titleTextStyle() {
 				return uni.$u.addStyle(this.titleStyle)

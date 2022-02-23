@@ -1,9 +1,9 @@
-export default {
+import { $u } from '../../index';export default {
     props: {
         // 用于滚动到指定item
         anchor: {
             type: [String, Number],
-            default: uni.$u.props.listItem.anchor
+            default: $u.props.listItem.anchor
         }
     }
 }

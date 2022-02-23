@@ -22,9 +22,9 @@
 
 <script>
 	import props from './props.js'
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u--slider',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		methods: {
 			// 拖动过程中触发
 			changingHandler(e) {

@@ -77,14 +77,14 @@
 	 * @event {Function} touchstart 事件触摸时触发
 	 * @example <u-icon name="photo" color="#2979ff" size="28"></u-icon>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-icon',
 		data() {
 			return {
 
 			}
 		},
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		computed: {
 			uClasses() {
 				let classes = []

@@ -55,10 +55,10 @@
 	 * @event {Function} change 某个radio状态发生变化时触发(选中状态)
 	 * @example <u-radio :labelDisabled="false">门掩黄昏，无计留春住</u-radio>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-radio",
 		
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				checked: false,

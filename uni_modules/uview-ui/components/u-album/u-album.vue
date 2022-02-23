@@ -79,9 +79,9 @@ const dom = uni.requireNativePlugin('dom')
  * @event    {Function}        albumWidth       某些特殊的情况下，需要让文字与相册的宽度相等，这里事件的形式对外发送  （回调参数 width ）
  * @example <u-album :urls="urls2" @albumWidth="width => albumWidth = width" multipleSize="68" ></u-album>
  */
-export default {
+import { $u } from '../../index';export default {
     name: 'u-album',
-    mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+    mixins: [$u.mpMixin, $u.mixin, props],
     data() {
         return {
             // 单图的宽度

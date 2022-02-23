@@ -108,9 +108,9 @@
 	 * @event {Function}	onChange
 	 * @example <u-number-box v-model="value" @change="valChange"></u-number-box>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-number-box',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				// 输入框实际操作的值

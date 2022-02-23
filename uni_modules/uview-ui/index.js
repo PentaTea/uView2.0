@@ -35,7 +35,7 @@ import color from './libs/config/color.js'
 // 平台
 import platform from './libs/function/platform'
 
-const $u = {
+export const $u = {
     route,
     date: index.timeFormat, // 另名date
     colorGradient: colorGradient.colorGradient,

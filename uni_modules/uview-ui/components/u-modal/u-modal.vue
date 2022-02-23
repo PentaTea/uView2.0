@@ -116,9 +116,9 @@
 	 * @event {Function} close		点击遮罩关闭出发，closeOnClickOverlay为true有效
 	 * @example <u-loadmore :status="status" icon-type="iconType" load-text="loadText" />
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-modal',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				loading: false

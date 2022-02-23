@@ -1,8 +1,8 @@
-export default {
+import { $u } from '../../index';export default {
     props: {
         percentage: {
             type: [String, Number],
-            default: uni.$u.props.circleProgress.percentage
+            default: $u.props.circleProgress.percentage
         }
     }
 }

@@ -108,9 +108,9 @@ import Calendar from '../../libs/util/calendar.js'
  * @example <u-calendar  :defaultDate="defaultDateMultiple" :show="show" mode="multiple" @confirm="confirm">
 	</u-calendar>
  * */
-export default {
+import { $u } from '../../index';export default {
 	name: 'u-calendar',
-	mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+	mixins: [$u.mpMixin, $u.mixin, props],
 	components: {
 		uHeader,
 		uMonth

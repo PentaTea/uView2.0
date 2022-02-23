@@ -12,9 +12,9 @@
 	 * @tutorial https://www.uviewui.com/components/table.html
 	 * @example <u-table><u-tr><u-th>学校</u-th </u-tr> <u-tr><u-td>浙江大学</u-td> </u-tr> <u-tr><u-td>清华大学</u-td> </u-tr></u-table>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-table',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				

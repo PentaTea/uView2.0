@@ -25,9 +25,9 @@
 	 * @event {Function} click 点击遮罩发送事件
 	 * @example <u-overlay :show="show" @click="show = false"></u-overlay>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-overlay",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		computed: {
 			overlayStyle() {
 				const style = {

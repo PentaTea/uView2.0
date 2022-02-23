@@ -24,9 +24,9 @@
 	 * 
 	 * @example <u-link href="http://www.uviewui.com">蜀道难，难于上青天</u-link>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-link",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		computed: {
 			linkStyle() {
 				const style = {

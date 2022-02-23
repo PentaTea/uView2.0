@@ -78,9 +78,9 @@
 	 * @event    {Function}        click       点击组件时触发
 	 * @example  <u-alert :title="title"  type = "warning" :closable="closable" :description = "description"></u-alert>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-alert',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				show: true

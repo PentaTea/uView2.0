@@ -1,14 +1,14 @@
-export default {
+import { $u } from '../../index';export default {
     props: {
         // 宫格的name
         name: {
             type: [String, Number, null],
-            default: uni.$u.props.gridItem.name
+            default: $u.props.gridItem.name
         },
         // 背景颜色
         bgColor: {
             type: String,
-            default: uni.$u.props.gridItem.bgColor
+            default: $u.props.gridItem.bgColor
         }
     }
 }

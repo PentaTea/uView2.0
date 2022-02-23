@@ -102,13 +102,13 @@ import props from './props.js'
  * @event {Function} click  点击触发事件
  * @example <u--text text="我用十年青春,赴你最后之约"></u--text>
  */
-export default {
+import { $u } from '../../index';export default {
     name: 'u--text',
     // #ifdef MP
-    mixins: [uni.$u.mpMixin, uni.$u.mixin, value, button, openType, props],
+    mixins: [$u.mpMixin, $u.mixin, value, button, openType, props],
     // #endif
     // #ifndef MP
-    mixins: [uni.$u.mpMixin, uni.$u.mixin, value, props],
+    mixins: [$u.mpMixin, $u.mixin, value, props],
     // #endif
     computed: {
         valueStyle() {

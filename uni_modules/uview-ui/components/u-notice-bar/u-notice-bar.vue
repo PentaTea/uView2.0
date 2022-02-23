@@ -64,9 +64,9 @@
 	 * @event {Function}			close			点击右侧关闭图标触发
 	 * @example <u-notice-bar :more-icon="true" :list="list"></u-notice-bar>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-notice-bar",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				show: true

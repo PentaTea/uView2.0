@@ -51,9 +51,9 @@
 	 * @event {Function}	close	关闭组件式调用的函数
 	 * @example <u-notify message="Hi uView"></u-notify>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-notify',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				// 是否展示组件

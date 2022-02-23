@@ -155,13 +155,13 @@ import props from "./props.js";
  * @event {Function}	launchapp		打开 APP 成功的回调
  * @example <u-button>月落</u-button>
  */
-export default {
+import { $u } from '../../index';export default {
     name: "u-button",
     // #ifdef MP
-    mixins: [uni.$u.mpMixin, uni.$u.mixin, button, openType, props],
+    mixins: [$u.mpMixin, $u.mixin, button, openType, props],
     // #endif
     // #ifndef MP
-    mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+    mixins: [$u.mpMixin, $u.mixin, props],
     // #endif
     data() {
         return {};

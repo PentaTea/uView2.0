@@ -29,7 +29,7 @@
  * @event {Function} end 数值滚动到目标值时触发
  * @example <u-count-to ref="uCountTo" :end-val="endVal" :autoplay="autoplay"></u-count-to>
  */
-export default {
+import { $u } from '../../index';export default {
 	name: 'u-count-to',
 	data() {
 		return {
@@ -45,7 +45,7 @@ export default {
 			lastTime: 0 // 上一次的时间
 		};
 	},
-	mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+	mixins: [$u.mpMixin, $u.mixin,props],
 	computed: {
 		countDown() {
 			return this.startVal > this.endVal;

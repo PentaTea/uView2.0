@@ -30,9 +30,9 @@
 	 * @event {Function} unfixed	组件取消吸顶时触发
 	 * @example <u-sticky offsetTop="200"><view>塞下秋来风景异，衡阳雁去无留意</view></u-sticky>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-sticky',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				cssSticky: false, // 是否使用css的sticky实现

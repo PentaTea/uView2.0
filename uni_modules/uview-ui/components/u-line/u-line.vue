@@ -22,9 +22,9 @@
 	 * @property {Object}			customStyle	定义需要用到的外部样式
 	 * @example <u-line color="red"></u-line>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-line',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		computed: {
 			lineStyle() {
 				const style = {}

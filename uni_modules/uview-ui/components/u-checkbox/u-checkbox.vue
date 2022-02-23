@@ -55,9 +55,9 @@
 	 * @event {Function}	change	任一个checkbox状态发生变化时触发，回调为一个对象
 	 * @example <u-checkbox v-model="checked" :disabled="false">天涯</u-checkbox>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-checkbox",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				isChecked: false,

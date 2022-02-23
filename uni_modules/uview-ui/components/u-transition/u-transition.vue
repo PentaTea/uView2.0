@@ -33,7 +33,7 @@ import transition from "./transition.js";
  * @event {Function} after-leave	离开后触发
  * @example
  */
-export default {
+import { $u } from '../../index';export default {
 	name: 'u-transition',
 	data() {
 		return {
@@ -60,8 +60,8 @@ export default {
 	        }
 	    }
 	},
-	// 将mixin挂在到组件中，uni.$u.mixin实际上为一个vue格式对象
-	mixins: [uni.$u.mpMixin, uni.$u.mixin, transition, props],
+	// 将mixin挂在到组件中，$u.mixin实际上为一个vue格式对象
+	mixins: [$u.mpMixin, $u.mixin, transition, props],
 	watch: {
 		show: {
 			handler(newVal) {

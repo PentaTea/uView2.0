@@ -26,9 +26,9 @@
 	 * @event {Function} click 	点击cell列表时触发
 	 * @example <u-cell-group title="设置喜好">
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-cell-group',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 	}
 </script>
 

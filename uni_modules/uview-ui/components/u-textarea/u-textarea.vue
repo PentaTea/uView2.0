@@ -77,9 +77,9 @@ import props from "./props.js";
  * @event {Function(e)} keyboardheightchange	键盘高度发生变化的时候触发此事件
  * @example <u--textarea v-model="value1" placeholder="请输入内容" ></u--textarea>
  */
-export default {
+import { $u } from '../../index';export default {
     name: "u-textarea",
-    mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+    mixins: [$u.mpMixin, $u.mixin, props],
 	data() {
 		return {
 			// 输入框的值

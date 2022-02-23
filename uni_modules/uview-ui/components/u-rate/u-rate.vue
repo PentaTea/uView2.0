@@ -99,9 +99,9 @@
 	 * @event {Function} change 选中的星星发生变化时触发
 	 * @example <u-rate :count="count" :value="2"></u-rate>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-rate",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				// 生成一个唯一id，否则一个页面多个评分组件，会造成冲突

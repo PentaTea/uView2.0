@@ -72,9 +72,9 @@
 	 * @property {String}					avatarShape	头像占位图的形状，circle-圆形，square-方形 (默认 'circle' )
 	 * @example <u-search placeholder="日照香炉生紫烟" v-model="keyword"></u-search>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-skeleton',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				width: 0,

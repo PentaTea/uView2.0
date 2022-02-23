@@ -21,9 +21,9 @@
 	 * @event {Function} click 点击宫格触发
 	 * @example <u-grid :col="3" @click="click"></u-grid>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-grid',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				index: 0,

@@ -66,9 +66,9 @@
 	 * @event {Function}			change 			某个item被打开或者收起时触发
 	 * @example <u-collapse-item :title="item.head" v-for="(item, index) in itemList" :key="index">{{item.body}}</u-collapse-item>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-collapse-item",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				elId: uni.$u.guid(),

@@ -37,9 +37,9 @@
 	 */
 	import uvTextarea from '../u-textarea/u-textarea.vue';
 	import props from '../u-textarea/props.js'
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u--textarea',
-		mixins: [uni.$u.mpMixin, props, uni.$u.mixin],
+		mixins: [$u.mpMixin, props, $u.mixin],
 		components: {
 			uvTextarea
 		},

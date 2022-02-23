@@ -96,14 +96,14 @@
 	 * @event {Function} backspace 键盘退格键被点击
 	 * @example <u-keyboard mode="number" v-model="show"></u-keyboard>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-keyboard",
 		data() {
 			return {
 
 			}
 		},
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		methods: {
 			change(e) {
 				this.$emit('change', e);

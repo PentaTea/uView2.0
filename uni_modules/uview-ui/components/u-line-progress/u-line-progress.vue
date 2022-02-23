@@ -40,9 +40,9 @@
 	 * 
 	 * @example <u-line-progress :percent="70" :show-percent="true"></u-line-progress>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-line-progress",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				lineWidth: 0,

@@ -46,7 +46,7 @@ import node from './node/node'
 // #ifdef APP-PLUS-NVUE
 const dom = weex.requireModule('dom')
 // #endif
-export default {
+import { $u } from '../../index';export default {
   name: 'mp-html',
   data() {
     return {

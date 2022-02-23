@@ -91,9 +91,9 @@
 	 * @event {Function} load 图片加载成功时触发
 	 * @example <u-image width="100%" height="300px" :src="src"></u-image>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-image',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				// 图片是否加载错误，如果是，则显示错误占位图

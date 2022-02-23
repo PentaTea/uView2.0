@@ -81,9 +81,9 @@
 	 * @event    {Function}        click       点击组件时触发   index: 用户传递的标识符
 	 * @example  <u-avatar :src="src" mode="square"></u-avatar>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-avatar',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				// 如果配置randomBgColor参数为true，在图标或者文字的模式下，会随机从中取出一个颜色值当做背景色

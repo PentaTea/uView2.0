@@ -71,9 +71,9 @@ import props from "./props.js";
  * @event {Function} change		分段器选项发生改变时触发  回调 index：选项的index索引值，从0开始
  * @example <u-subsection :list="list" :current="curNow" @change="sectionChange"></u-subsection>
  */
-export default {
+import { $u } from '../../index';export default {
     name: "u-subsection",
-    mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+    mixins: [$u.mpMixin, $u.mixin, props],
     data() {
         return {
             // 组件尺寸

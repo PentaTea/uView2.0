@@ -30,9 +30,9 @@
 	 * @property {Object}			customStyle	定义需要用到的外部样式
 	 * @example <u-badge :type="type" :count="count"></u-badge>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-badge',
-		mixins: [uni.$u.mpMixin, props, uni.$u.mixin],
+		mixins: [$u.mpMixin, props, $u.mixin],
 		computed: {
 			// 是否将badge中心与父组件右上角重合
 			boxStyle() {

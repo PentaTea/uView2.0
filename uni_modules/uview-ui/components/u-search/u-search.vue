@@ -108,9 +108,9 @@
 	 * @event {Function} clear 用户点击清除按钮时触发
 	 * @example <u-search placeholder="日照香炉生紫烟" v-model="keyword"></u-search>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-search",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				keyword: '',

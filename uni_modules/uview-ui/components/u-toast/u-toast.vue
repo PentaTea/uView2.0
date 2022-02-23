@@ -61,9 +61,9 @@
 	 * @event {Function} show 显示toast，如需一进入页面就显示toast，请在onReady生命周期调用
 	 * @example <u-toast ref="uToast" />
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-toast',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin],
+		mixins: [$u.mpMixin, $u.mixin],
 		data() {
 			return {
 				isShow: false,

@@ -1,4 +1,4 @@
-export default {
+import { $u } from '../../index';export default {
     fade: {
         enter: { opacity: 0 },
         'enter-to': { opacity: 1 },

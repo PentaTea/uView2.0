@@ -144,10 +144,10 @@
 	 * @event {Function} opensetting	在打开授权设置页后回调，openType="openSetting"时有效
 	 * @example <u-action-sheet :actions="list" :title="title" :show="show"></u-action-sheet>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-action-sheet",
 		// 一些props参数和methods方法，通过mixin混入，因为其他文件也会用到
-		mixins: [openType, button, uni.$u.mixin, props],
+		mixins: [openType, button, $u.mixin, props],
 		data() {
 			return {
 

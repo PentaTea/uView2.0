@@ -64,9 +64,9 @@
 	 * @event {Function}	finish	输入字符个数达maxlength值时触发，见上方说明	value：当前输入的值
 	 * @example	<u-code-input v-model="value4" :focus="true"></u-code-input>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-code-input',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				inputValue: ''

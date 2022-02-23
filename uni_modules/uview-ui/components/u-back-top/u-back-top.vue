@@ -47,9 +47,9 @@
 	 * 
 	 * @example <u-back-top :scrollTop="scrollTop"></u-back-top>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-back-top',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		computed: {
 			backTopStyle() {
 				// 动画组件样式

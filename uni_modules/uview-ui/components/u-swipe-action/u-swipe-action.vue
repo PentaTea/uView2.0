@@ -14,9 +14,9 @@
 	 * @event {Function(index)}	click	点击组件时触发
 	 * @example	<u-swipe-action><u-swipe-action-item :rightOptions="options1" ></u-swipe-action-item></u-swipe-action>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-swipe-action',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {}
 		},

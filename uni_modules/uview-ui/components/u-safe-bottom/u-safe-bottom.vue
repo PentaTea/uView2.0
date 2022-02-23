@@ -19,9 +19,9 @@
 	 * @event {Function()}
 	 * @example <u-status-bar></u-status-bar>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-safe-bottom",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				safeAreaBottomHeight: 0,

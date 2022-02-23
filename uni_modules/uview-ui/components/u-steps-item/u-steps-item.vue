@@ -61,9 +61,9 @@
 	 * @property {Boolean}			error			当前步骤是否处于失败状态  (默认 false )
 	 * @example <u-steps current="0"><u-steps-item title="已出库" desc="10:35" ></u-steps-item></u-steps>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-steps-item',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				index: 0,

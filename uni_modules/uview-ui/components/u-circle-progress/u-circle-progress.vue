@@ -38,9 +38,9 @@
 	 * @property {String | Number}	percentage	圆环进度百分比值，为数值类型，0-100 (默认 30 )
 	 * @example
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-circle-progress',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				leftBorderColor: 'rgb(200, 200, 200)',

@@ -1,4 +1,4 @@
-export default {
+import { $u } from '../../index';export default {
     methods: {
         // 设置月份数据
         setMonth() {

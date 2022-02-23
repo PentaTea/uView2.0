@@ -26,9 +26,9 @@
 	 * @event {Function} click row被点击
 	 * @example <u-row justify="space-between" customStyle="margin-bottom: 10px"></u-row>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-row",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				

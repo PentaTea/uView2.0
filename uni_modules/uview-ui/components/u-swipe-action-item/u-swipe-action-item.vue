@@ -67,14 +67,14 @@
 	 * @event {Function(index)}	close	组件关闭时触发
 	 * @example	<u-swipe-action><u-swipe-action-item :options="options1" ></u-swipe-action-item></u-swipe-action>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-swipe-action-item',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props, touch],
+		mixins: [$u.mpMixin, $u.mixin, props, touch],
 		// #ifdef APP-NVUE
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props, nvue, touch],
+		mixins: [$u.mpMixin, $u.mixin, props, nvue, touch],
 		// #endif
 		// #ifdef APP-VUE || MP-WEIXIN || H5 || MP-QQ
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props, touch, wxs],
+		mixins: [$u.mpMixin, $u.mixin, props, touch, wxs],
 		// #endif
 		data() {
 			return {

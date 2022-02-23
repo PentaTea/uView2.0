@@ -3,7 +3,7 @@ const dom = uni.requireNativePlugin('dom');
 const bindingX = uni.requireNativePlugin('bindingx');
 const animation = uni.requireNativePlugin('animation');
 
-export default {
+import { $u } from '../../index';export default {
 	data() {
 		return {
 			// 所有按钮的总宽度

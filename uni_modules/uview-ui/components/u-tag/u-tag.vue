@@ -79,9 +79,9 @@
 	 * @event {Function(index)} close closable为true时，点击标签关闭按钮触发 index: 传递的index参数值	
 	 * @example <u-tag text="标签" type="error" plain plainFill></u-tag>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-tag',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 

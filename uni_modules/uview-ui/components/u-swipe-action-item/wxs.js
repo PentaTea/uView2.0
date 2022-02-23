@@ -1,4 +1,4 @@
-export default {
+import { $u } from '../../index';export default {
     methods: {
         // 关闭时执行
         closeHandler() {

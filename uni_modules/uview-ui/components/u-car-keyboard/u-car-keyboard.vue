@@ -78,9 +78,9 @@
 	 * @event {Function} backspace 点击退格键触发
 	 * @example <u-keyboard ref="uKeyboard" mode="car" v-model="show"></u-keyboard>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-keyboard",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				// 车牌输入时，abc=true为输入车牌号码，bac=false为输入省份中文简称

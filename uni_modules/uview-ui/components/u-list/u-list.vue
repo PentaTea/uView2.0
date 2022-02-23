@@ -65,9 +65,9 @@
 	 *
 	 * @example <u-list @scrolltolower="scrolltolower"></u-list>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-list',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		watch: {
 			scrollIntoView(n) {
 				this.scrollIntoViewById(n)

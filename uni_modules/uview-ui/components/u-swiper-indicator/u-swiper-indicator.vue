@@ -44,9 +44,9 @@
 	 * @property {String}			indicatorMode			指示器模式（默认 'line' ）
 	 * @example	<u-swiper :list="list4" indicator keyName="url" :autoplay="false"></u-swiper>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-swiper-indicator',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				lineWidth: 22

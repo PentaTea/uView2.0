@@ -90,9 +90,9 @@
 	 *
 	 * @example <u-form-item label="姓名" prop="userInfo.name" borderBottom ref="item1"></u-form-item>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-form-item',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				// 错误提示语

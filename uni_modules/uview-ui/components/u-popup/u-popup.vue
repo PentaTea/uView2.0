@@ -71,9 +71,9 @@
 	 * @event {Function} close 弹出层收起
 	 * @example <u-popup v-model="show"><text>出淤泥而不染，濯清涟而不妖</text></u-popup>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-popup',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				overlayDuration: this.duration + 50

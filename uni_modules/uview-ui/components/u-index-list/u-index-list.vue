@@ -115,9 +115,9 @@
 	 * @property {Boolean}			sticky			是否开启锚点自动吸顶 ( 默认 true )
 	 * @property {String | Number}	customNavHeight	自定义导航栏的高度 ( 默认 0 )
 	 * */ 
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-index-list',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		// #ifdef MP-WEIXIN
 		// 将自定义节点设置成虚拟的，更加接近Vue组件的表现，能更好的使用flex属性
 		options: {

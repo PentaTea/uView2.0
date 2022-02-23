@@ -59,9 +59,9 @@ import props from "./props.js";
  * @property {Object}			customStyle		自定义样式
  * @example <u-loading mode="circle"></u-loading>
  */
-export default {
+import { $u } from '../../index';export default {
     name: "u-loading-page",
-    mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+    mixins: [$u.mpMixin, $u.mixin, props],
     data() {
         return {};
     },

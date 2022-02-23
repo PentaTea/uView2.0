@@ -6,7 +6,7 @@
 </template>
 
 <script>
-	export default {
+	import { $u } from '../../index';export default {
 		
 	}
 </script>

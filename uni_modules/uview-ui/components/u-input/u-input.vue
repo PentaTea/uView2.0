@@ -117,9 +117,9 @@ import props from "./props.js";
  *
  * @example <u-input v-model="value" :password="true" suffix-icon="lock-fill" />
  */
-export default {
+import { $u } from '../../index';export default {
     name: "u-input",
-    mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+    mixins: [$u.mpMixin, $u.mixin, props],
     data() {
         return {
             // 输入框的值

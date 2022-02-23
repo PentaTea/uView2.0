@@ -32,9 +32,9 @@
 	 * @event {Function}	input	修改通过v-model绑定的值时触发，回调为一个对象
 	 * @example <u-checkbox-group></u-checkbox-group>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-checkbox-group',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		computed: {
 			// 这里computed的变量，都是子组件u-checkbox需要用到的，由于头条小程序的兼容性差异，子组件无法实时监听父组件参数的变化
 			// 所以需要手动通知子组件，这里返回一个parentData变量，供watch监听，在其中去通知每一个子组件重新从父组件(u-checkbox-group)

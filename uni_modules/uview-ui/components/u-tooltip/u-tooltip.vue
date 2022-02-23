@@ -115,9 +115,9 @@
 	 * @event {Function} 
 	 * @example 
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-tooltip',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				// 是否展示气泡

@@ -50,9 +50,9 @@
 	 * @event {Function} 
 	 * @example 
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-toolbar',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		methods: {
 			// 点击取消按钮
 			cancel() {

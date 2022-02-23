@@ -74,8 +74,8 @@
 	 * @property {Boolean}			disableTouch	是否禁止用手滑动切换   目前HX2.6.11，只支持App 2.5.5+、H5 2.5.5+、支付宝小程序、字节跳动小程序 （ 默认 true ）
 	 * @example 
 	 */
-	export default {
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+	import { $u } from '../../index';export default {
+		mixins: [$u.mpMixin, $u.mixin,props],
 		watch: {
 			text: {
 				immediate: true,

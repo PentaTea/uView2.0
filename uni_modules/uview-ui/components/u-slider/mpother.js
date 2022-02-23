@@ -1,7 +1,7 @@
 /**
  * 使用普通的js方案实现slider
  */
-export default {
+import { $u } from '../../index';export default {
     watch: {
         value(n) {
             // 只有在非滑动状态时，才可以通过value更新滑块值，这里监听，是为了让用户触发

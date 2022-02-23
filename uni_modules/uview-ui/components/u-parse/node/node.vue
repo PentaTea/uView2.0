@@ -101,7 +101,7 @@ module.exports = {
 <script>
 
 import node from './node'
-export default {
+import { $u } from '../../index';export default {
   name: 'node',
   // #ifdef MP-WEIXIN
   options: {

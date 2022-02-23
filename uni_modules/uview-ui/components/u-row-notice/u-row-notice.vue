@@ -67,9 +67,9 @@
 	 * @event {Function} close 点击右侧关闭图标触发
 	 * @example 
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-row-notice',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				animationDuration: '0', // 动画执行时间

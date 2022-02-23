@@ -52,8 +52,8 @@
 	 * @event {Function} backspace	点击退格键触发
 	 * @example
 	 */
-	export default {
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+	import { $u } from '../../index';export default {
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				backspace: 'backspace', // 退格键内容

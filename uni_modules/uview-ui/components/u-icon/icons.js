@@ -1,4 +1,4 @@
-export default {
+import { $u } from '../../index';export default {
     'uicon-level': '\ue693',
     'uicon-column-line': '\ue68e',
     'uicon-checkbox-mark': '\ue807',

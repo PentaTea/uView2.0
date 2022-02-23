@@ -123,9 +123,9 @@
 	 * @event {Function(index)}	change	轮播图切换时触发(自动或者手动切换)	index：切换到了第几张图片，从0开始
 	 * @example	<u-swiper :list="list4" keyName="url" :autoplay="false"></u-swiper>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-swiper',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				currentIndex: 0

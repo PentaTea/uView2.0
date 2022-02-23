@@ -22,9 +22,9 @@
 	 * @event {Function}	end		结束倒计时触发
 	 * @example <u-code ref="uCode" @change="codeChange" seconds="20"></u-code> 
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-code",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				secNum: this.seconds,

@@ -58,9 +58,9 @@
 	 * 
 	 * @example <u-tabbar :value="value2" :placeholder="false" @change="name => value2 = name" :fixed="false" :safeAreaInsetBottom="false"><u-tabbar-item text="首页" icon="home" dot ></u-tabbar-item></u-tabbar>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-tabbar-item',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				isActive: false, // 是否处于激活状态

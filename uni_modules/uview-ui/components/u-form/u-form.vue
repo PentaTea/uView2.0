@@ -23,9 +23,9 @@
 	 * @property {Object}						labelStyle		lable的样式，对象形式
 	 * @example <u--formlabelPosition="left" :model="model1" :rules="rules" ref="form1"></u--form>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-form",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		provide() {
 			return {
 				uForm: this,

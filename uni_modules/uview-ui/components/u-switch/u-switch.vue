@@ -48,9 +48,9 @@
 	 * @event {Function} change 在switch打开或关闭时触发
 	 * @example <u-switch v-model="checked" active-color="red" inactive-color="#eee"></u-switch>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-switch",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		watch: {
 			value: {
 				immediate: true,

@@ -47,9 +47,9 @@
 	 * @event {Function}	click	divider组件被点击时触发
 	 * @example <u-divider :color="color">锦瑟无端五十弦</u-divider>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name:'u-divider',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		computed: {
 			textStyle() {
 				const style = {}

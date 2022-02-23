@@ -16,9 +16,9 @@
 	 * 
 	 * @example <u-gap height="80" bg-color="#bbb"></u-gap>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-gap",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		computed: {
 			gapStyle() {
 				const style = {

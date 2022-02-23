@@ -54,9 +54,9 @@
 	 * @event {Function}			retry	用户点击页面的"重试"按钮时触发
 	 * @example <u-no-network></u-no-network>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-no-network",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				isConnected: true, // 是否有网络连接

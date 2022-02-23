@@ -61,9 +61,9 @@
 	 * @event {Function} cancel 点击取消按钮
 	 * @example  <u-datetime-picker :show="show" :value="value1"  mode="datetime" ></u-datetime-picker>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'datetime-picker',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				columns: [],

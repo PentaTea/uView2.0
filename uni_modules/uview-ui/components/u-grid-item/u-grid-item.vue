@@ -36,9 +36,9 @@
 	 * @event {Function} click 点击宫格触发
 	 * @example <u-grid-item></u-grid-item>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-grid-item",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				parentData: {

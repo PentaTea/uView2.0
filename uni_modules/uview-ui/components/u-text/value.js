@@ -1,4 +1,4 @@
-export default {
+import { $u } from '../../index';export default {
     computed: {
         // 经处理后需要显示的值
         value() {

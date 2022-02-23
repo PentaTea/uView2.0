@@ -1,4 +1,4 @@
-export default {
+import { $u } from '../../index';export default {
     computed: { value() { return this.modelValue } },
     props: {
         // 当前选中项的value值

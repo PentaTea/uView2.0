@@ -50,9 +50,9 @@
 	 * @event    {Function}        showMore 头像组更多点击
 	 * @example  <u-avatar-group:urls="urls" size="35" gap="0.4" ></u-avatar-group:urls=>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-avatar-group',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 

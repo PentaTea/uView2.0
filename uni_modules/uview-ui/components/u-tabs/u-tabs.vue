@@ -97,9 +97,9 @@
 	 * @event {Function(index)} click 点击标签时触发 index: 点击了第几个tab，索引从0开始
 	 * @example <u-tabs :list="list" :is-scroll="false" :current="current" @change="change"></u-tabs>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-tabs',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				firstTime: true,

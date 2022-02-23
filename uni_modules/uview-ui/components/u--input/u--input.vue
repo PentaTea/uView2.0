@@ -62,9 +62,9 @@
 	 */
 	import uvInput from '../u-input/u-input.vue';
 	import props from '../u-input/props.js'
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u--input',
-		mixins: [uni.$u.mpMixin, props, uni.$u.mixin],
+		mixins: [$u.mpMixin, props, $u.mixin],
 		components: {
 			uvInput
 		},

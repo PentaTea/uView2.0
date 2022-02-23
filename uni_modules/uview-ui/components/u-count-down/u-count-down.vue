@@ -28,9 +28,9 @@
 	 * @event {Function} reset	重设倒计时，若 auto-start 为 true，重设后会自动开始倒计时 
 	 * @example <u-count-down :time="time"></u-count-down>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-count-down',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				timer: null,

@@ -17,9 +17,9 @@
 	 * @property {String | Object}	customStyle		自定义样式 
 	 * @example <u-status-bar></u-status-bar>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-status-bar',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 			}

@@ -22,14 +22,14 @@
 	 */
 	import uvForm from '../u-form/u-form.vue';
 	import props from '../u-form/props.js'
-	export default {
+	import { $u } from '../../index';export default {
 		// #ifdef MP-WEIXIN
 		name: 'u-form',
 		// #endif
 		// #ifndef MP-WEIXIN
 		name: 'u--form',
 		// #endif
-		mixins: [uni.$u.mpMixin, props, uni.$u.mixin],
+		mixins: [$u.mpMixin, props, $u.mixin],
 		components: {
 			uvForm
 		},

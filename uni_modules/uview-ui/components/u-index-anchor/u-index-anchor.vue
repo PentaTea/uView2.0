@@ -39,9 +39,9 @@
 	 * @property {String | Number}	height	列表锚点高度，单位默认px ( 默认 32 )
 	 * @example <u-index-anchor :text="indexList[index]"></u-index-anchor>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-index-anchor',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 			}

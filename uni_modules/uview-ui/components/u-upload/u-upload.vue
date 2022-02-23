@@ -160,9 +160,9 @@
 	 * @event {Function} delete 		删除图片
 	 * @example <u-upload :action="action" :fileList="fileList" ></u-upload>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-upload",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, mixin,props],
+		mixins: [$u.mpMixin, $u.mixin, mixin,props],
 		data() {
 			return {
 				// #ifdef APP-NVUE

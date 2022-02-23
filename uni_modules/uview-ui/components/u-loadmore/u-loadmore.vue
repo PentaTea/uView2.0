@@ -74,9 +74,9 @@
 	 * @event {Function} loadmore status为loadmore时，点击组件会发出此事件
 	 * @example <u-loadmore :status="status" icon-type="iconType" load-text="loadText" />
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: "u-loadmore",
-		mixins: [uni.$u.mpMixin, uni.$u.mixin,props],
+		mixins: [$u.mpMixin, $u.mixin,props],
 		data() {
 			return {
 				// 粗点

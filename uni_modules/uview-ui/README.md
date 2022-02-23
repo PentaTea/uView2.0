@@ -1,15 +1,22 @@
 # __UNOFFICIAL__ uView2 vue3-support version
 
 - index.js
-  - 删除filter相关代码
+  - 删除 filter 相关代码
   - `prototype`修改为`config.globalProperties`
+  - `const $u` 修改为 `export const $u`
 - 生命周期
   - beforeDestroy => beforeUnmount
   - destroyed => unmounted
-- v-model适配
+- v-model 适配
   - `('input` => `('update:modelValue`
   - `props.js`中`value: {` => `modelValue: {`
   - `props.js`中正则搜索`(^)(?=\s*prop[\s\S\r]*modelValue)` => `    computed: { value() { return this.modelValue } },\n`
-- esm适配
-  - 下载esm版本dayjs并替换
-  - 预构建clipboard并替换
+- esm 适配
+  - 下载 esm 版本 dayjs 并替换
+  - 预构建 clipboard 并替换
+- uni 适配
+  - uview-ui/components 中：
+    - `uni.$u.mpMixin` => `$u.mpMixin`
+    - `uni.$u.mixin` => `$u.mixin`
+    - `default: uni.$u.props` => `default: $u.props`
+    - `export default {` => `import { $u } from '../../index';export default {`

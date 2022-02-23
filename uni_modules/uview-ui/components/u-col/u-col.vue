@@ -27,9 +27,9 @@
 	 * @event {Function}	click	col被点击，会阻止事件冒泡到row
 	 * @example	 <u-col  span="3" offset="3" > <view class="demo-layout bg-purple"></view> </u-col>
 	 */
-	export default {
+	import { $u } from '../../index';export default {
 		name: 'u-col',
-		mixins: [uni.$u.mpMixin, uni.$u.mixin, props],
+		mixins: [$u.mpMixin, $u.mixin, props],
 		data() {
 			return {
 				width: 0,

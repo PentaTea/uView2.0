@@ -20,7 +20,7 @@ const animation = uni.requireNativePlugin('animation')
 const getStyle = (name) => animationMap[name]
 // #endif
 
-export default {
+import { $u } from '../../index';export default {
     methods: {
         // 组件被点击发出事件
         clickHandler() {
