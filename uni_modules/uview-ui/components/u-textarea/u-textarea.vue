@@ -176,7 +176,7 @@ import { $u } from '../../index';export default {
 		valueChange() {
 		    const value = this.innerValue;
 		    this.$nextTick(() => {
-		        this.$emit("input", value);
+		        this.$emit("update:modelValue", value);
 		        // 标识value值的变化是由内部引起的
 		        this.changeFromInner = true;
 		        this.$emit("change", value);
